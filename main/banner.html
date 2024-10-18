@@ -1,0 +1,320 @@
+<html lang="en"></html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   TekJin
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  
+ 
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .bg-overlay {
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .background-image {
+  position: relative; /* Allows for positioning of pseudo-element */
+  height: 50%; /* Set the height to half of its parent */
+  overflow: hidden; /* Prevent overflow of child elements */
+}
+.background-image1{
+   background-image: url('images/images\ \(29\).jpeg'); 
+   background-size: cover; /* Adjust to fit the container */
+}
+
+.background-image::before {
+  content: ""; /* Required for pseudo-element */
+  /* background-image: url('images/images\ \(29\).jpeg'); */
+  background-image: url('images/clients.webp');
+  background-size: cover; /* Adjust to fit the container */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute; /* Position it absolutely */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Stretch to the right */
+  bottom: 0; /* Stretch to the bottom */
+  opacity: 0.5; /* Set desired opacity (0 to 1) */
+  z-index: 0; /* Behind other content */
+}
+
+.content {
+  position: relative; /* Allows content to appear above the background */
+  z-index: 1; /* Above the pseudo-element */
+}
+
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <header class="relative">
+    <div class="relative h-full max-h-full flex items-center justify-center background-image">
+      <!-- Logo -->
+      <div class="absolute top-10 left-10">
+        <a href="banner1.html">
+        <img alt="Company Logo" height="100" src="images/logo3.jpeg" width="100" />
+      </a>
+      </div>
+    
+      <!-- Main Content -->
+       <div class="text-left ml-12 md:ml-0 md:text-center p-1 absolute  left-20 z-10">
+      
+        <h1 class="text-4xl font-bold mb-4 md:text-3xl">
+          EMPOWERING  
+           BUSINESSES
+           TO REACH THEIR FULL POTENTIAL. 
+        </h1>
+        <button type="button" class="  text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+          See our Experience
+          </button>
+        
+      </div>
+    
+      <!-- Menu Button -->
+      <div class="absolute top-10 right-10 z-10"> <!-- Removed md:hidden -->
+        <button id="openButton" class="text-orange-500 text-2xl">
+          <i class="fas fa-bars"></i> <!-- Ensure the icon class is correct -->
+        </button>
+      </div>
+    
+      <!-- Sidebar Menu -->
+      <div id="sidebar" class="absolute top-0 right-0 h-full w-1/4 md:w-1/2 lg:w-1/6 bg-gray-800 bg-opacity-50 p-8 hidden">
+        <div class="flex justify-end">
+          <button id="closeButton" class="text-orange-500 text-2xl">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="mt-10">
+          <h2 class="text-3xl font-bold mb-6">MENU</h2>
+          <ul class="space-y-4">
+            <li>
+              <a class="block text-lg" href="#">About</a>
+            </li>
+            <li>
+              <a class="block text-lg" href="#">Services</a>
+            </li>
+            <li>
+              <a class="block text-lg" href="#">Casestudies</a>
+            </li>
+            <li>
+              <a class="block text-lg" href="#">Resources</a>
+            </li>
+            <li>
+              <a class="block text-lg" href="#">Reviews</a>
+            </li>
+          </ul>
+          <button class="mt-6 bg-orange-500 text-white py-2 px-6 rounded-full">
+            Schedule Consultation
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="bg-black py-16">
+    <section class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row h-auto lg:h-screen">
+        <!-- Left Section (Image) -->
+        <div class="w-full lg:w-1/2 flex items-center justify-center relative h-screen lg:h-auto">
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <img
+            alt="Background with smoke effect"
+            class="absolute inset-0 w-full h-full object-cover opacity-25"
+            height="800"
+            src="https://storage.googleapis.com/a1aa/image/coqcx6lUHo7oA595ZZlpvrDEDRfbCHSV1KA5ENu4fKSNeiNnA.jpg"
+            width="600"
+          />
+          <div class="relative z-10 p-8 text-center lg:text-left">
+            <h1 class="text-4xl font-bold text-orange-500 mb-4">OUR Profession</h1>
+            <p class="text-lg text-gray-300 mb-8">
+              <span class="text-orange-500">TekJin</span> is a trendsetter in developing transformative digital products for businesses of all sizes.
+            </p>
+            <div class="flex justify-center">
+              <i class="fas fa-chevron-down text-2xl text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Right Section (Cards) -->
+        <div class="w-full lg:w-1/2 flex flex-col justify-center p-8 space-y-8">
+          <!-- Cards Layout for 1800px and below -->
+        
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+              <img
+                alt="Web development icon"
+                class="mb-4 mx-auto"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/nOAwPQek6SSBCqXt095WZf7kNoBgjodzpvK7MPXwsQjMeiNnA.jpg"
+                width="100"
+              />
+              <h2 class="text-xl font-bold mb-2 text-white">Web Development</h2>
+              <p class="text-gray-400">
+                Provide top-tier web development, design, and functionality custom-tailored to elevate your business.
+              </p>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+              <img
+                alt="Digital Transformation icon"
+                class="mb-4 mx-auto"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/ZjuebXLN6J2YQK9J6LxU6xVkteftJEQMPTGEW1cyednD5FbOB.jpg"
+                width="100"
+              />
+              <h2 class="text-xl font-bold mb-2 text-white">Digital Transformation</h2>
+              <p class="text-gray-400">
+                Revolutionize your business operations with digitization, automation, and accelerated growth.
+              </p>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+              <img
+                alt="Software Architecture icon"
+                class="mb-4 mx-auto"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/E6MPd5O92qpVJ5im1DAXSsTynZ9e4U0BLAA83DYWzYhFvYzJA.jpg"
+                width="100"
+              />
+              <h2 class="text-xl font-bold mb-2 text-white">Software Architecture</h2>
+              <p class="text-gray-400">
+                Unlock tailored software solutions designed to enhance your business's productivity and efficiency.
+              </p>
+            </div>
+    
+            <!-- Card 4 -->
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+              <img
+                alt="Mobile App Development icon"
+                class="mb-4 mx-auto"
+                height="100"
+                src="https://storage.googleapis.com/a1aa/image/eeea3FCnpzLLRIutdK9P4hfNLBg6FPghjrtrkkO4a3e9xL2cC.jpg"
+                width="100"
+              />
+              <h2 class="text-xl font-bold mb-2 text-white">Mobile App Development</h2>
+              <p class="text-gray-400">
+                Elevate your mobile app with expert Android and iOS development services, making it shine in the competitive market.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Services Link -->
+          <div class="flex justify-end mt-8">
+            <a class="text-gray-400 flex items-center" href="#">
+              See our services <i class="fas fa-chevron-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+   
+   </section> 
+   <section class="bg-gray-900 py-16 background-image1">
+   
+    <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 ">
+      
+      <!-- Left Side Content -->
+      <div class="w-full mt-12 lg:text-left">
+        <h2 class="text-2xl font-bold text-orange-500">
+          Our Esteemed Clients Trust Us
+        </h2>
+        <p class="mt-2 text-lg text-white">
+          Experience the difference!
+        </p>
+      </div>
+  
+      <!-- Right Side Content -->
+      <div class="w-full md:w-3/4 mt-8 bg-gray-800 p-6 rounded-lg">
+        <p class="text-lg text-white">
+          Embark on a journey towards a brighter future, harnessing cutting-edge technologies, expert guidance, and unmatched support to turbocharge your business.
+        </p>
+        <div class="mt-4 flex items-center justify-center">
+          <span class="mr-2 text-white">Strawberry</span>
+          <span class="font-bold text-orange-500">Olav Fyldeng</span>
+          <span class="ml-2 text-white">CIO Plantasjen</span>
+        </div>
+      </div>
+  
+      <!-- Carousel Dots (Centered) -->
+      <!-- <div class="mt-4 flex justify-center space-x-2">
+        <span class="w-3 h-3 bg-orange-500 rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-500 rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-500 rounded-full"></span>
+        <span class="w-3 h-3 bg-gray-500 rounded-full"></span>
+      </div> -->
+    </div>
+  
+    
+  
+    <!-- Centered Partner Logos Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4 flex flex-wrap justify-center items-center space-x-8">
+        <img alt="Azure logo" class="h-12" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-tXI1DA8Jse6bl8lx0hqL6TWZ.png" width="100"/>
+        <img alt="Cisco Partner logo" class="h-12" src="https://placehold.co/100x50"/>
+        <img alt="Upwork logo" class="h-12" src="https://placehold.co/100x50"/>
+        <img alt="Microsoft Dynamics logo" class="h-12" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-cDYFL6v1MHfyxeXtmziexFQo.png" width="100"/>
+      </div>
+    </section>
+ 
+  </section>
+   <!-- Consultation Section -->
+   <section class="py-16 bg-black">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Left Column (Full Width on Mobile) -->
+      <div class="w-full mb-8 md:mb-0">
+        <h2 class="text-2xl font-bold text-orange-500 mb-4">
+          Book a complimentary consultation with our experts.
+        </h2>
+        <p class="mb-8">
+          Embark on a journey towards a brighter future, harnessing cutting-edge technologies, expert guidance, and unmatched support to turbocharge your business.
+        </p>
+      </div>
+  
+      <!-- Right Column -->
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 mb-8 p-6">
+        
+          
+        
+        <div class="text-left text-white flex-1">
+          <h2 class="font-bold text-orange-500">Tekjin</h2>
+          <p>Email: <a href="mailto:info@tekjin.com">info@tekjin.com</a></p>
+          <p>Contact: <a href="tel:+1234567890">+123-456-7890</a></p>
+          <p>Address: 123 Tekjin St, Innovation City, USA</p>
+          <p>SM Links: 
+            <a href="#">LinkedIn</a>, 
+            <a href="#">Twitter</a>, 
+            <a href="#">Facebook</a>
+          </p>
+        </div>
+        <div class="text-left">
+          <button class="bg-gray-700 text-white p-2 px-4 md:px-6 rounded-full text-base md:text-lg">
+            Schedule a consultation
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  </main>
+  <script>
+    document.getElementById('openButton').onclick = function() {
+      document.getElementById('sidebar').classList.toggle('hidden');
+    };
+    document.getElementById('closeButton').onclick = function() {
+      document.getElementById('sidebar').classList.add('hidden');
+    };
+  </script>
+ </body>
+</html>
